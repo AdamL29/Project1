@@ -1,10 +1,45 @@
-* {
-  background-color: beige;
+html {
+  background-color: bisque;
 }
 
 #home {
   display: grid;
-  width: 100%;
-  background-color: darkslategray;
+  background-color: aqua;
+  width: 100vw;
+  height: 25vh;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 280px;
+}
+#home > img {
+  position: absolute;
+  left: 30vw;
+  height: 20vh;
+}
+#home > p {
+  position: absolute;
+  justify-self: center;
+  top: 135px;
+  left: 45vw;
+}
+#home > .menu {
+  position: absolute;
+  justify-self: end;
+  align-self: center;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+main > iframe {
+  position: relative;
+  margin-bottom: 100px;
+  padding-bottom: 100px;
+}
+main > #about {
+  display: inline;
+}
+
+footer {
+  text-align: center;
 }/*# sourceMappingURL=grid.css.map */

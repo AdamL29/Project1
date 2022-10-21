@@ -1,12 +1,21 @@
 @use "general";
 @use "footer";
+@use "header";
 
-#home{
+
+main{
     display: grid;
-    width: 100%;
-    background-color: darkslategray;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    grid-template-columns: 1fr;
+    >iframe{
+        position: relative;
+        margin-bottom: 100px;
+        padding-bottom: 100px;
+    }
+    >#about{
+        display: inline;
+    }
 }
 
-
-
+footer{
+    text-align: center;
+}
