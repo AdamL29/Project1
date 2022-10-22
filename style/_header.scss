@@ -1,23 +1,84 @@
 #home{
     display: grid;
     background-color: aqua;
-    width: 100vw;
     height: 25vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 280px;
-    // background-image: url(/media/Pizza\ Logo.png);
+    margin-bottom: 10px;
     >img{
         position: absolute;
-        left: 30vw;
+        left: 29vw;
         height: 20vh;
     }
     >p{
         position: absolute;
         justify-self: center;
-        top: 135px;
+        top: 130px;
         left: 45vw;
     }
     >.menu{
+        position: absolute;
+        justify-self: start;
+        align-self: center;
+    }
+    >.contact{
+        position: absolute;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+#menu{
+    display: grid;
+    background-color: aqua;
+    height: 25vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+    >img{
+        position: absolute;
+        left: 29vw;
+        height: 20vh;
+    }
+    >p{
+        position: absolute;
+        justify-self: center;
+        top: 130px;
+        left: 45vw;
+    }
+    >.home{
+        position: absolute;
+        justify-self: start;
+        align-self: center;
+    }
+    >.contact{
+        position: absolute;
+        justify-self: end;
+        align-self: center;
+    }
+}
+
+#contact{
+    display: grid;
+    background-color: aqua;
+    height: 25vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+    >img{
+        position: absolute;
+        left: 29vw;
+        height: 20vh;
+    }
+    >p{
+        position: absolute;
+        justify-self: center;
+        top: 130px;
+        left: 42vw;
+    }
+    >.menu{
+        position: absolute;
+        justify-self: start;
+        align-self: center;
+    }
+    >.home{
         position: absolute;
         justify-self: end;
         align-self: center;

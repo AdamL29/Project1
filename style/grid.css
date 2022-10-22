@@ -2,44 +2,134 @@ html {
   background-color: bisque;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+footer {
+  text-align: center;
+  background-color: darkgray;
+}
+
 #home {
   display: grid;
   background-color: aqua;
-  width: 100vw;
   height: 25vh;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  margin-bottom: 280px;
+  margin-bottom: 10px;
 }
 #home > img {
   position: absolute;
-  left: 30vw;
+  left: 29vw;
   height: 20vh;
 }
 #home > p {
   position: absolute;
   justify-self: center;
-  top: 135px;
+  top: 130px;
   left: 45vw;
 }
 #home > .menu {
+  position: absolute;
+  justify-self: start;
+  align-self: center;
+}
+#home > .contact {
   position: absolute;
   justify-self: end;
   align-self: center;
 }
 
-main {
+#menu {
   display: grid;
-  grid-template-columns: 1fr;
+  background-color: aqua;
+  height: 25vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 10px;
 }
-main > iframe {
-  position: relative;
-  margin-bottom: 100px;
-  padding-bottom: 100px;
+#menu > img {
+  position: absolute;
+  left: 29vw;
+  height: 20vh;
 }
-main > #about {
-  display: inline;
+#menu > p {
+  position: absolute;
+  justify-self: center;
+  top: 130px;
+  left: 45vw;
+}
+#menu > .home {
+  position: absolute;
+  justify-self: start;
+  align-self: center;
+}
+#menu > .contact {
+  position: absolute;
+  justify-self: end;
+  align-self: center;
 }
 
-footer {
-  text-align: center;
+#contact {
+  display: grid;
+  background-color: aqua;
+  height: 25vh;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-bottom: 10px;
+}
+#contact > img {
+  position: absolute;
+  left: 29vw;
+  height: 20vh;
+}
+#contact > p {
+  position: absolute;
+  justify-self: center;
+  top: 130px;
+  left: 42vw;
+}
+#contact > .menu {
+  position: absolute;
+  justify-self: start;
+  align-self: center;
+}
+#contact > .home {
+  position: absolute;
+  justify-self: end;
+  align-self: center;
+}
+
+#homemain {
+  display: grid;
+  grid-template-columns: 1fr;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmOZAiCp9O_8jSADIFy9eqc1nc05sVgtyqQ&usqp=CAU);
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position: absolute;
+  background-position: bottom;
+}
+#homemain > #intro {
+  position: relative;
+  margin-bottom: 20px;
+  width: 100%;
+}
+#homemain > #about {
+  display: inline;
+  margin-bottom: 100px;
+}
+#homemain > #hours ~ p {
+  color: white;
+  font-size: larger;
+}
+
+#menumain > #apps, #menumain #pizza, #menumain #pasta, #menumain #calzone, #menumain #dessert, #menumain #drink {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#contactmain {
+  display: grid;
+}
+#contactmain > iframe {
+  width: 100%;
 }/*# sourceMappingURL=grid.css.map */
