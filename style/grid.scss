@@ -20,9 +20,9 @@
         // box-shadow: inset 0 0 0 1000px rgba(0,0,0,1);
 
         ~p{
-                color: white;
-                font-size: larger;
-
+            color: white;
+            font-size: larger;
+            text-align: center;
         }
     }
     background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmOZAiCp9O_8jSADIFy9eqc1nc05sVgtyqQ&usqp=CAU);
@@ -37,7 +37,9 @@
 
     >#apps,#pizza,#pasta,#calzone,#dessert,#drink {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr;
+        row-gap: -1px;
+        border: 2px solid red;
     }
 }
 
@@ -45,6 +47,34 @@
     display: grid;
     >iframe{
         width: 100%;
+        margin-bottom: 10px;
+    }
+    >#reachus{
+        display: grid;
+        background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60);
+        background-position: bottom;
+        height: 400px;
+    }
+    #phone{
+        justify-self: center;
+        position: relative;
+        top: 180px;
+        color: black;
+        background-color: aqua;
+        width: 55px;
+        height: 20px;
+        border: 1px solid blue;
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    #email{
+        justify-self: center;
+        color: black;
+        background-color: aqua;
+        width: 68px;
+        height: 20px;
+        border: 1px solid blue;
+        border-radius: 10px;
     }
 }
 
