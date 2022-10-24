@@ -7,6 +7,10 @@ body {
   padding: 0;
 }
 
+img {
+  width: 500px;
+}
+
 footer {
   text-align: center;
   font-size: small;
