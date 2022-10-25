@@ -34,7 +34,13 @@
 }
 
 #menumain{
-
+    >h2{
+        font-weight: 1500px;
+        background-color: red;
+    }
+    >.price{
+        font-weight: 9000px;
+    }
     >#apps,#pizza,#pasta,#calzone,#dessert,#drink {
         display: grid;
         grid-template-columns: 1fr;
@@ -78,6 +84,3 @@
     }
 }
 
-// @media only screen and (minmax 300){
-
-// }

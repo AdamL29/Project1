@@ -25,6 +25,9 @@
         justify-self: end;
         align-self: center;
     }
+    >#tophours~p{
+        display: none;
+    }
 }
 
 #menu{
@@ -82,5 +85,43 @@
         position: absolute;
         justify-self: end;
         align-self: center;
+    }
+}
+
+@media only screen and (max-width: 400px){
+    #tophours~p{
+    display: none;
+    }
+}
+
+@media only screen and (min-width: 400px){
+    #tophours~p{
+        display: initial;
+        }
+    #home{
+        background-color: orange;
+        display: grid;
+        height: 23vh;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 10px;
+        >img{
+            position: absolute;
+            left: 0;
+            top: 1.5vh;
+            height: 20vh;
+        }
+        >p{
+            display: none;
+        }
+        >.menu{
+            position: absolute;
+            justify-self: center;
+            align-self: center;
+        }
+        >.contact{
+            position: absolute;
+            justify-self: end;
+            align-self: center;
+        }
     }
 }

@@ -7,8 +7,8 @@ body {
   padding: 0;
 }
 
-img {
-  width: 500px;
+.menuimg {
+  width: 100vw;
 }
 
 footer {
@@ -47,6 +47,9 @@ footer {
   position: absolute;
   justify-self: end;
   align-self: center;
+}
+#home > #tophours ~ p {
+  display: none;
 }
 
 #menu {
@@ -107,6 +110,42 @@ footer {
   align-self: center;
 }
 
+@media only screen and (max-width: 400px) {
+  #tophours ~ p {
+    display: none;
+  }
+}
+@media only screen and (min-width: 400px) {
+  #tophours ~ p {
+    display: initial;
+  }
+  #home {
+    background-color: orange;
+    display: grid;
+    height: 23vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+  }
+  #home > img {
+    position: absolute;
+    left: 0;
+    top: 1.5vh;
+    height: 20vh;
+  }
+  #home > p {
+    display: none;
+  }
+  #home > .menu {
+    position: absolute;
+    justify-self: center;
+    align-self: center;
+  }
+  #home > .contact {
+    position: absolute;
+    justify-self: end;
+    align-self: center;
+  }
+}
 #homemain {
   display: grid;
   grid-template-columns: 1fr;
@@ -131,6 +170,13 @@ footer {
   text-align: center;
 }
 
+#menumain > h2 {
+  font-weight: 1500px;
+  background-color: red;
+}
+#menumain > .price {
+  font-weight: 9000px;
+}
 #menumain > #apps, #menumain #pizza, #menumain #pasta, #menumain #calzone, #menumain #dessert, #menumain #drink {
   display: grid;
   grid-template-columns: 1fr;
