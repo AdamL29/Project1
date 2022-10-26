@@ -8,3 +8,9 @@ body{
 .menuimg{
     width: 100vw;
 }
+
+@media only screen and (min-width: 400px){
+    .menuimg{
+        width: 250px;
+    }
+}

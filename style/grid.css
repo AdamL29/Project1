@@ -11,6 +11,11 @@ body {
   width: 100vw;
 }
 
+@media only screen and (min-width: 400px) {
+  .menuimg {
+    width: 250px;
+  }
+}
 footer {
   text-align: center;
   font-size: small;
@@ -47,9 +52,6 @@ footer {
   position: absolute;
   justify-self: end;
   align-self: center;
-}
-#home > #tophours ~ p {
-  display: none;
 }
 
 #menu {
@@ -110,14 +112,15 @@ footer {
   align-self: center;
 }
 
-@media only screen and (max-width: 400px) {
-  #tophours ~ p {
-    display: none;
-  }
+#tophours ~ p {
+  display: none;
 }
+
 @media only screen and (min-width: 400px) {
   #tophours ~ p {
-    display: initial;
+    display: contents;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100ox, 1fr));
   }
   #home {
     background-color: orange;
@@ -132,17 +135,75 @@ footer {
     top: 1.5vh;
     height: 20vh;
   }
-  #home > p {
+  #home > .title {
     display: none;
   }
   #home > .menu {
     position: absolute;
-    justify-self: center;
+    justify-self: end;
+    right: 150px;
     align-self: center;
   }
   #home > .contact {
     position: absolute;
     justify-self: end;
+    right: 30px;
+    align-self: center;
+  }
+  #menu {
+    background-color: orange;
+    display: grid;
+    height: 23vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+  }
+  #menu > img {
+    position: absolute;
+    left: 0;
+    top: 1.5vh;
+    height: 20vh;
+  }
+  #menu > .title {
+    display: none;
+  }
+  #menu > .home {
+    position: absolute;
+    justify-self: end;
+    right: 150px;
+    align-self: center;
+  }
+  #menu > .contact {
+    position: absolute;
+    justify-self: end;
+    right: 30px;
+    align-self: center;
+  }
+  #contact {
+    background-color: orange;
+    display: grid;
+    height: 23vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+  }
+  #contact > img {
+    position: absolute;
+    left: 0;
+    top: 1.5vh;
+    height: 20vh;
+  }
+  #contact > .title {
+    display: none;
+  }
+  #contact > .home {
+    position: absolute;
+    justify-self: end;
+    right: 150px;
+    align-self: center;
+  }
+  #contact > .menu {
+    position: absolute;
+    justify-self: end;
+    right: 30px;
     align-self: center;
   }
 }
@@ -180,8 +241,9 @@ footer {
 #menumain > #apps, #menumain #pizza, #menumain #pasta, #menumain #calzone, #menumain #dessert, #menumain #drink {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: -1px;
+  row-gap: 0px;
   border: 2px solid red;
+  justify-items: center;
 }
 
 #contactmain {
@@ -195,6 +257,7 @@ footer {
   display: grid;
   background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60);
   background-position: bottom;
+  background-repeat: no-repeat;
   height: 400px;
 }
 #contactmain #phone {
@@ -217,4 +280,49 @@ footer {
   height: 20px;
   border: 1px solid blue;
   border-radius: 10px;
+}
+
+@media only screen and (min-width: 400px) {
+  #homemain > #intro {
+    width: 100vw;
+    height: 50vh;
+    margin-bottom: 20px;
+  }
+  #homemain > #about {
+    margin-bottom: 0px;
+    color: white;
+    text-shadow: 50px black;
+    font-size: 24px;
+    text-align: center;
+  }
+  #homemain > #hours ~ p {
+    display: none;
+  }
+  #menumain {
+    display: grid;
+  }
+  #menumain > #apps, #menumain #pizza, #menumain #pasta, #menumain #calzone, #menumain #dessert, #menumain #drink {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  #contactmain > iframe {
+    height: 500px;
+  }
+  #contactmain > #reachus #phone {
+    left: 300px;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+    text-align: center;
+  }
+  #contactmain > #reachus #email {
+    position: absolute;
+    right: 700px;
+    bottom: 150px;
+    height: 50px;
+    width: 60px;
+    font-size: 20px;
+    text-align: center;
+  }
 }/*# sourceMappingURL=grid.css.map */

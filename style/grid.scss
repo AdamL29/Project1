@@ -44,8 +44,9 @@
     >#apps,#pizza,#pasta,#calzone,#dessert,#drink {
         display: grid;
         grid-template-columns: 1fr;
-        row-gap: -1px;
+        row-gap: 0px;
         border: 2px solid red;
+        justify-items: center;
     }
 }
 
@@ -59,6 +60,7 @@
         display: grid;
         background-image: url(https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F19%2F2014%2F07%2F10%2Fpepperoni-pizza-ck-x.jpg&q=60);
         background-position: bottom;
+        background-repeat: no-repeat;
         height: 400px;
     }
     #phone{
@@ -84,3 +86,55 @@
     }
 }
 
+@media only screen and (min-width: 400px){
+    #homemain{
+        >#intro{
+            width: 100vw;
+            height: 50vh;
+            margin-bottom: 20px;
+        }
+        >#about{
+            margin-bottom: 0px;
+            color: white;
+            text-shadow: 50px black;
+            font-size: 24px;
+            text-align: center;
+        }
+        >#hours~p{
+            display: none;
+        }
+    }
+    #menumain{
+        display: grid;
+        >#apps,#pizza,#pasta,#calzone,#dessert,#drink{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            justify-items: center;
+        }
+    }
+    #contactmain{
+        >iframe{
+            height: 500px;
+        }
+        >#reachus #phone{
+            left: 300px;
+            height: 50px;
+            width: 50px;
+            font-size: 20px;
+            text-align: center;
+        }
+        >#reachus #email{
+            position: absolute;
+            right: 700px;
+            bottom: 150px;
+            height: 50px;
+            width: 60px;
+            font-size: 20px;
+            text-align: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+
+}
