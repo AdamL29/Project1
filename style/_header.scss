@@ -10,10 +10,10 @@
         height: 20vh;
     }
     >p{
-        position: absolute;
+        position: relative;
         justify-self: center;
-        top: 130px;
-        left: 45vw;
+        top: 125px;
+        left: 1vw;
     }
     >.menu{
         position: absolute;
@@ -92,9 +92,12 @@
 
 @media only screen and (min-width: 400px){
     #tophours~p{
-        display: contents;
+        position: relative;
+        justify-self: center;
+        top: 80px;
+        left: 350px;
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(100ox, 1fr));
+        width: 260px;
         }
     #home{
         background-color: orange;
@@ -177,6 +180,100 @@
             position: absolute;
             justify-self: end;
             right: 30px;
+            align-self: center;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    #tophours~p{
+        position: relative;
+        justify-self: center;
+        top: 50px;
+        left: 300px;
+        width: 300px;
+        }
+    #home{
+        background-color: orange;
+        display: grid;
+        height: 23vh;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 10px;
+        >img{
+            position: absolute;
+            left: 0;
+            top: 1.5vh;
+            height: 20vh;
+        }
+        >.title{
+            display: none;
+        }
+        >.menu{
+            position: absolute;
+            justify-self: end;
+            right: 250px;
+            align-self: center;
+        }
+        >.contact{
+            position: absolute;
+            justify-self: end;
+            right: 100px;
+            align-self: center;
+        }
+    }
+    #menu{
+        background-color: orange;
+        display: grid;
+        height: 23vh;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 10px;
+        >img{
+            position: absolute;
+            left: 0;
+            top: 1.5vh;
+            height: 20vh;
+        }
+        >.title{
+            display: none;
+        }
+        >.home{
+            position: absolute;
+            justify-self: end;
+            right: 250px;
+            align-self: center;
+        }
+        >.contact{
+            position: absolute;
+            justify-self: end;
+            right: 100px;
+            align-self: center;
+        }
+    }
+    #contact{
+        background-color: orange;
+        display: grid;
+        height: 23vh;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin-bottom: 10px;
+        >img{
+            position: absolute;
+            left: 0;
+            top: 1.5vh;
+            height: 20vh;
+        }
+        >.title{
+            display: none;
+        }
+        >.home{
+            position: absolute;
+            justify-self: end;
+            right: 250px;
+            align-self: center;
+        }
+        >.menu{
+            position: absolute;
+            justify-self: end;
+            right: 100px;
             align-self: center;
         }
     }

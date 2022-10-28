@@ -38,10 +38,10 @@ footer {
   height: 20vh;
 }
 #home > p {
-  position: absolute;
+  position: relative;
   justify-self: center;
-  top: 130px;
-  left: 45vw;
+  top: 125px;
+  left: 1vw;
 }
 #home > .menu {
   position: absolute;
@@ -118,9 +118,12 @@ footer {
 
 @media only screen and (min-width: 400px) {
   #tophours ~ p {
-    display: contents;
+    position: relative;
+    justify-self: center;
+    top: 80px;
+    left: 350px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100ox, 1fr));
+    width: 260px;
   }
   #home {
     background-color: orange;
@@ -207,6 +210,99 @@ footer {
     align-self: center;
   }
 }
+@media only screen and (min-width: 900px) {
+  #tophours ~ p {
+    position: relative;
+    justify-self: center;
+    top: 50px;
+    left: 300px;
+    width: 300px;
+  }
+  #home {
+    background-color: orange;
+    display: grid;
+    height: 23vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+  }
+  #home > img {
+    position: absolute;
+    left: 0;
+    top: 1.5vh;
+    height: 20vh;
+  }
+  #home > .title {
+    display: none;
+  }
+  #home > .menu {
+    position: absolute;
+    justify-self: end;
+    right: 250px;
+    align-self: center;
+  }
+  #home > .contact {
+    position: absolute;
+    justify-self: end;
+    right: 100px;
+    align-self: center;
+  }
+  #menu {
+    background-color: orange;
+    display: grid;
+    height: 23vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+  }
+  #menu > img {
+    position: absolute;
+    left: 0;
+    top: 1.5vh;
+    height: 20vh;
+  }
+  #menu > .title {
+    display: none;
+  }
+  #menu > .home {
+    position: absolute;
+    justify-self: end;
+    right: 250px;
+    align-self: center;
+  }
+  #menu > .contact {
+    position: absolute;
+    justify-self: end;
+    right: 100px;
+    align-self: center;
+  }
+  #contact {
+    background-color: orange;
+    display: grid;
+    height: 23vh;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin-bottom: 10px;
+  }
+  #contact > img {
+    position: absolute;
+    left: 0;
+    top: 1.5vh;
+    height: 20vh;
+  }
+  #contact > .title {
+    display: none;
+  }
+  #contact > .home {
+    position: absolute;
+    justify-self: end;
+    right: 250px;
+    align-self: center;
+  }
+  #contact > .menu {
+    position: absolute;
+    justify-self: end;
+    right: 100px;
+    align-self: center;
+  }
+}
 #homemain {
   display: grid;
   grid-template-columns: 1fr;
@@ -229,6 +325,9 @@ footer {
   color: white;
   font-size: larger;
   text-align: center;
+}
+#homemain > #desktop {
+  display: none;
 }
 
 #menumain > h2 {
@@ -264,22 +363,27 @@ footer {
   justify-self: center;
   position: relative;
   top: 180px;
+  font-weight: 900;
   color: black;
   background-color: aqua;
-  width: 55px;
+  width: 100px;
   height: 20px;
   border: 1px solid blue;
   border-radius: 10px;
   margin-bottom: 5px;
+  text-align: center;
 }
 #contactmain #email {
   justify-self: center;
+  position: relative;
+  font-weight: 900;
   color: black;
   background-color: aqua;
-  width: 68px;
+  width: 230px;
   height: 20px;
   border: 1px solid blue;
   border-radius: 10px;
+  text-align: center;
 }
 
 @media only screen and (min-width: 400px) {
@@ -298,6 +402,9 @@ footer {
   #homemain > #hours ~ p {
     display: none;
   }
+  #homemain > #desktop {
+    display: none;
+  }
   #menumain {
     display: grid;
   }
@@ -310,18 +417,80 @@ footer {
     height: 500px;
   }
   #contactmain > #reachus #phone {
-    left: 300px;
-    height: 50px;
-    width: 50px;
+    top: 430px;
+    height: 28px;
+    width: 130px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  #contactmain > #reachus #email {
+    top: 280px;
+    height: 28px;
+    width: 280px;
     font-size: 20px;
     text-align: center;
   }
-  #contactmain > #reachus #email {
+}
+@media only screen and (min-width: 900px) {
+  #homemain {
+    background-image: none;
+  }
+  #homemain > #intro {
+    width: 90vw;
+    left: 5vw;
+    height: 100vh;
+    margin-bottom: 250px;
+  }
+  #homemain > #about {
+    position: relative;
+    margin-bottom: 100px;
+    color: white;
+    text-shadow: 50px black;
+    font-size: 24px;
+    text-align: center;
+    bottom: 200px;
+  }
+  #homemain > #hours ~ p {
+    display: none;
+  }
+  #homemain > #desktop {
     position: absolute;
-    right: 700px;
-    bottom: 150px;
-    height: 50px;
-    width: 60px;
+    top: 1165px;
+    display: initial;
+    z-index: -1;
+    width: 99vw;
+    height: 80vh;
+  }
+  #menumain {
+    display: grid;
+  }
+  #menumain > #apps, #menumain #pizza, #menumain #pasta, #menumain #calzone, #menumain #dessert, #menumain #drink {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    -moz-column-gap: 5px;
+         column-gap: 5px;
+    justify-items: center;
+  }
+  #contactmain {
+    background-image: none;
+  }
+  #contactmain > iframe {
+    height: 700px;
+  }
+  #contactmain > #reachus #phone {
+    top: 430px;
+    height: 28px;
+    width: 130px;
+    font-size: 20px;
+    text-align: center;
+    font-size: 20px;
+  }
+  #contactmain > #reachus #email {
+    top: 280px;
+    height: 28px;
+    width: 280px;
     font-size: 20px;
     text-align: center;
   }
