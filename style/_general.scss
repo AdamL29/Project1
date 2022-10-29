@@ -1,5 +1,5 @@
 html{
-    background-color: lightgray;
+    background-color: rgb(237, 244, 237);
 }
 body{
     margin: 0;
@@ -7,6 +7,20 @@ body{
 }
 .menuimg{
     width: 100vw;
+}
+a{
+    text-decoration: none;
+}
+#top{
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 50;
+    color: white;
+    background-color: orange;
+    width: 31px;
+    height: 20px;
+    border-radius: 50%;
 }
 
 @media only screen and (min-width: 400px){

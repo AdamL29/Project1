@@ -1,9 +1,9 @@
 #home{
     display: grid;
-    background-color: aqua;
+    background-color:rgb(127, 127, 127);
     height: 25vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     >img{
         position: absolute;
         left: 29vw;
@@ -14,25 +14,28 @@
         justify-self: center;
         top: 125px;
         left: 1vw;
+        color: white;
     }
     >.menu{
         position: absolute;
         justify-self: start;
         align-self: center;
+        color: white;
     }
     >.contact{
         position: absolute;
         justify-self: end;
         align-self: center;
+        color: white;
     }
 }
 
 #menu{
     display: grid;
-    background-color: aqua;
+    background-color:rgb(127, 127, 127);
     height: 25vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 10px;
+    margin-bottom: 1px;
     >img{
         position: absolute;
         left: 29vw;
@@ -43,25 +46,28 @@
         justify-self: center;
         top: 130px;
         left: 45vw;
+        color: white;
     }
     >.home{
         position: absolute;
         justify-self: start;
         align-self: center;
+        color: white;
     }
     >.contact{
         position: absolute;
         justify-self: end;
         align-self: center;
+        color: white;
     }
 }
 
 #contact{
     display: grid;
-    background-color: aqua;
+    background-color: rgb(127, 127, 127);
     height: 25vh;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     >img{
         position: absolute;
         left: 29vw;
@@ -72,16 +78,19 @@
         justify-self: center;
         top: 130px;
         left: 42vw;
+        color: white;
     }
     >.menu{
         position: absolute;
         justify-self: start;
         align-self: center;
+        color: white;
     }
     >.home{
         position: absolute;
         justify-self: end;
         align-self: center;
+        color: white;
     }
 }
 
@@ -98,9 +107,9 @@
         left: 350px;
         display: grid;
         width: 260px;
+        color: white;
         }
     #home{
-        background-color: orange;
         display: grid;
         height: 23vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -128,7 +137,6 @@
         }
     }
     #menu{
-        background-color: orange;
         display: grid;
         height: 23vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -156,7 +164,6 @@
         }
     }
     #contact{
-        background-color: orange;
         display: grid;
         height: 23vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -194,7 +201,6 @@
         width: 300px;
         }
     #home{
-        background-color: orange;
         display: grid;
         height: 23vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -222,7 +228,6 @@
         }
     }
     #menu{
-        background-color: orange;
         display: grid;
         height: 23vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -250,7 +255,6 @@
         }
     }
     #contact{
-        background-color: orange;
         display: grid;
         height: 23vh;
         grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));

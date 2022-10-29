@@ -2,7 +2,9 @@
 @use "footer";
 @use "header";
 
-
+html{
+    background-color: rgb(26, 40, 31);
+}
 #homemain{
     display: grid;
     grid-template-columns: 1fr;
@@ -13,11 +15,11 @@
     }
     >#about{
         display: inline;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
+        color: white;
+        text-align: center;
     }
     >#hours{
-        // background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmOZAiCp9O_8jSADIFy9eqc1nc05sVgtyqQ&usqp=CAU);
-        // box-shadow: inset 0 0 0 1000px rgba(0,0,0,1);
 
         ~p{
             color: white;
@@ -28,9 +30,9 @@
     >#desktop{
         display: none;
     }
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFmOZAiCp9O_8jSADIFy9eqc1nc05sVgtyqQ&usqp=CAU);
+    background-image: url(https://images.pexels.com/photos/260922/pexels-photo-260922.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: 100vw 40vh;
     background-position: absolute;
     background-position: bottom;
     // box-shadow: inset 0 0 0 1000px rgba(0,0,0,0.5);
@@ -39,7 +41,8 @@
 #menumain{
     >h2{
         font-weight: 1500px;
-        background-color: red;
+        background-color: rgb(111, 26, 7);
+        color: white;
     }
     >.price{
         font-weight: 9000px;
@@ -48,8 +51,8 @@
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 0px;
-        border: 2px solid red;
         justify-items: center;
+        color: white;
     }
 }
 
@@ -71,11 +74,10 @@
         position: relative;
         top: 180px;
         font-weight: 900;
-        color: black;
-        background-color: aqua;
+        color: white;
         width: 100px;
         height: 20px;
-        border: 1px solid blue;
+        border: 1px solid white;
         border-radius: 10px;
         margin-bottom: 5px;
         text-align: center;
@@ -84,11 +86,10 @@
         justify-self: center;
         position: relative;
         font-weight: 900;
-        color: black;
-        background-color: aqua;
+        color: white;
         width: 230px;
         height: 20px;
-        border: 1px solid blue;
+        border: 1px solid white;
         border-radius: 10px;
         text-align: center;
     }
@@ -96,6 +97,7 @@
 
 @media only screen and (min-width: 400px){
     #homemain{
+        background-size: 100vw 50vh;
         >#intro{
             width: 100vw;
             height: 50vh;
@@ -119,7 +121,7 @@
         display: grid;
         >#apps,#pizza,#pasta,#calzone,#dessert,#drink{
             display: grid;
-            grid-template-columns: repeat(4, 1fr);
+            grid-template-columns: repeat(3, 1fr);
             justify-items: center;
         }
     }
@@ -149,7 +151,7 @@
     #homemain{
         >#intro{
             width: 90vw;
-            left: 5vw;
+            left: 4vw;
             height: 100vh;
             margin-bottom: 250px;
         }
@@ -192,18 +194,18 @@
             height: 700px;
         }
         >#reachus #phone{
-            top: 430px;
+            top: 420px;
             height: 28px;
-            width: 130px;
+            width: 150px;
             font-size: 20px;
             text-align: center;
-            font-size: 20px;
+            font-size: 24px;
         }
         >#reachus #email{
-            top: 280px;
+            top: 260px;
             height: 28px;
-            width: 280px;
-            font-size: 20px;
+            width: 340px;
+            font-size: 24px;
             text-align: center;
         }
     }
