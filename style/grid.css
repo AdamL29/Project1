@@ -389,11 +389,12 @@ html {
 #contactmain #phone {
   justify-self: center;
   position: relative;
-  top: 180px;
+  top: 410px;
   font-weight: 900;
   color: white;
-  width: 100px;
-  height: 20px;
+  font-size: 32px;
+  width: 200px;
+  height: 35px;
   border: 1px solid white;
   border-radius: 10px;
   margin-bottom: 5px;
@@ -402,10 +403,12 @@ html {
 #contactmain #email {
   justify-self: center;
   position: relative;
+  top: 260px;
   font-weight: 900;
   color: white;
-  width: 230px;
-  height: 20px;
+  font-size: 24px;
+  width: 350px;
+  height: 25px;
   border: 1px solid white;
   border-radius: 10px;
   text-align: center;
@@ -445,18 +448,17 @@ html {
     height: 500px;
   }
   #contactmain > #reachus #phone {
-    top: 430px;
+    top: 420px;
     height: 28px;
-    width: 130px;
-    font-size: 20px;
+    width: 180px;
+    font-size: 28px;
     text-align: center;
-    font-size: 20px;
   }
   #contactmain > #reachus #email {
-    top: 280px;
+    top: 260px;
     height: 28px;
-    width: 280px;
-    font-size: 20px;
+    width: 400px;
+    font-size: 28px;
     text-align: center;
   }
 }
@@ -499,10 +501,16 @@ html {
     grid-template-rows: 1fr;
     -moz-column-gap: 5px;
          column-gap: 5px;
-    justify-items: center;
+    align-items: start;
   }
-  #contactmain {
-    background-image: none;
+  #menumain > #apps > .food, #menumain #pizza > .food, #menumain #pasta > .food, #menumain #calzone > .food, #menumain #dessert > .food, #menumain #drink > .food {
+    display: grid;
+    justify-items: center;
+    text-align: center;
+    width: 300px;
+  }
+  #menumain > #apps > .food > .menuimg, #menumain #pizza > .food > .menuimg, #menumain #pasta > .food > .menuimg, #menumain #calzone > .food > .menuimg, #menumain #dessert > .food > .menuimg, #menumain #drink > .food > .menuimg {
+    width: 300px;
   }
   #contactmain > iframe {
     height: 700px;
@@ -521,5 +529,16 @@ html {
     width: 340px;
     font-size: 24px;
     text-align: center;
+  }
+  #contactmain > #grab #pizzaslice {
+    position: absolute;
+    top: 930px;
+    width: 700px;
+  }
+  #contactmain > #grab #alfredo {
+    position: absolute;
+    width: 700px;
+    right: 0px;
+    top: 930px;
   }
 }/*# sourceMappingURL=grid.css.map */
