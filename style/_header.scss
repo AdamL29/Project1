@@ -6,13 +6,14 @@
     margin-bottom: 5px;
     >img{
         position: absolute;
-        left: 29vw;
-        height: 20vh;
+        left: 26vw;
+        height: 19vh;
+        justify-content: center;
     }
-    >p{
+    >.title{
         position: relative;
         justify-self: center;
-        top: 125px;
+        top: 210px;
         left: 1vw;
         color: white;
     }
@@ -99,13 +100,13 @@
 }
 
 //The following section is to be seen when the website is on a tablet.
-@media only screen and (min-width: 400px){
+@media only screen and (min-width: 600px){
     #tophours~p{
         position: relative;
         justify-self: center;
         font-size: 18px;
-        top: 80px;
-        left: 330px;
+        top: 40px;
+        left: 270px;
         display: grid;
         width: 260px;
         color: white;
@@ -198,8 +199,8 @@
         position: relative;
         justify-self: center;
         font-size: 20px;
-        top: 50px;
-        left: 300px;
+        top: 40px;
+        left: 280px;
         width: 300px;
         }
     #home{
