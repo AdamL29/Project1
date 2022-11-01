@@ -51,13 +51,13 @@ footer {
 #home > img {
   position: absolute;
   left: 26vw;
-  height: 19vh;
+  height: 20vh;
   justify-content: center;
 }
 #home > .title {
   position: relative;
   justify-self: center;
-  top: 210px;
+  top: 35px;
   left: 1vw;
   color: white;
 }
@@ -83,13 +83,13 @@ footer {
 }
 #menu > img {
   position: absolute;
-  left: 29vw;
+  left: 26vw;
   height: 20vh;
 }
 #menu > p {
   position: absolute;
   justify-self: center;
-  top: 130px;
+  top: 135px;
   left: 45vw;
   color: white;
 }
@@ -115,13 +115,13 @@ footer {
 }
 #contact > img {
   position: absolute;
-  left: 29vw;
+  left: 26vw;
   height: 20vh;
 }
 #contact > p {
   position: absolute;
   justify-self: center;
-  top: 130px;
+  top: 135px;
   left: 42vw;
   color: white;
 }
